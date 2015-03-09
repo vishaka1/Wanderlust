@@ -1,5 +1,5 @@
 $(function () {
-  var file = 'Mumbai.GPX';
+  var file = 'history-01-29-2015-Feb.kml';
   // var file = 'history-02-01-2015.kml';
   $.ajax({
     url: './data/' + file,
