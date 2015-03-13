@@ -17,7 +17,7 @@ function drawMap () {
 
 function drawPoints (canvasOverlay, params) {
   var ctx = params.canvas.getContext('2d');
-  var radius = 20;
+  var radius = 2;
   
   ctx.clearRect(0, 0, params.canvas.width, params.canvas.height);
   
@@ -30,13 +30,14 @@ function drawPoints (canvasOverlay, params) {
     ctx.arc(dot.x, dot.y, radius, 0, 2 * Math.PI, false);
 
   });
-  /* // set line color
+  // set line color
       ctx.strokeStyle = '#7c3801';
-      ctx.stroke();*/
+      ctx.stroke();
+    }
 
-      ctx.fillStyle = 'green';
+     /* ctx.fillStyle = 'green';
       ctx.fill();
       ctx.lineWidth = 5;
       ctx.strokeStyle = '#003300';
       ctx.stroke();
-      }
+      }*/
